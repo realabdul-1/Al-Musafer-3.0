@@ -1,5 +1,6 @@
 {
-  "name": "figact-react-template",
+  "homepage": "https://realabdul-1.github.io/Al-Musafer-3.0/",
+  "name": "al-musafer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts --max_old_space_size=4096 start --openssl-legacy-provider",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -38,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
